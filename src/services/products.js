@@ -7,7 +7,7 @@ async function getFullName(codeId, productName){
 }
 // fim da declaração de função de codigo e nome dos produtos
 //__________________________________
-// função que adiciona uma linha em branco
+// função que adiciona uma linha em branco // hidden function
 async function doBreakLine(){
     console.log("\n");
 }
