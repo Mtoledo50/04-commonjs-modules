@@ -2,7 +2,7 @@
 //criação de uma variável constante chamada de p que o seu conteudo é uma require(solicitação)
 const p = require("./services/products");  // declaração de variável que permite importar tudo o que estiver declarado na variavel dentro desse arquivo mencionado
 const config = require("./services/config"); // declaração de variável que permite importar tudo o que estiver declarado na variavel dentro desse arquivo mencionado
-
+const database = require ("./services/databases");
 
 async function main() {
     console.log("Carrinho de Compras: ");
@@ -12,6 +12,8 @@ async function main() {
     console.log(config.client);
     console.log(config.devArea);
 
+    database.connectToDatabase
+    database.disconnectDatabase
 }
 
 main ();
